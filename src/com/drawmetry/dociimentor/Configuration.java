@@ -359,7 +359,8 @@ public class Configuration extends DefaultHandler {
      * class.
      */
     private Configuration() {
-        configFile = new File(System.getProperty("user.home"), ".dociimentor/dociiconfig.xml");
+        configFile = new File(System.getProperty("user.dir"), ".dociimentor/dociiconfig.xml");
+        System.out.println(configFile.getAbsolutePath());
         parseDocument();
     }
 
@@ -435,7 +436,7 @@ public class Configuration extends DefaultHandler {
                 File sysHome = new File(atts.getValue(i));
                 boolean success = false;
                 if (!sysHome.isAbsolute()) {
-                    sysHome = new File(System.getProperty("user.home"), sysHome.getPath());
+                    sysHome = new File(System.getProperty("user.dir"), sysHome.getPath());
                 }
                 if (!sysHome.exists()) {
                     success = sysHome.mkdirs();

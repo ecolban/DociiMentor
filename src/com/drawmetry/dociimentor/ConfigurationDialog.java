@@ -25,13 +25,22 @@ public class ConfigurationDialog extends javax.swing.JDialog {
     Component parent;
     File selectedDirectory;
     File configFile;
+    
+    public static void main(String[] args) {
+    	ConfigurationDialog dialog = new ConfigurationDialog(null, true);
+        dialog.setVisible(true);
+        File docDir = dialog.getSelectedDirectory();
+        dialog.dispose();
+        dialog = null;
+        System.out.println(docDir.getAbsolutePath());
+	}
 
     /** Creates new form ConfigurationDialog */
     public ConfigurationDialog(Frame parent, boolean modal) {
         super(parent, modal);
         this.parent = parent;
-        selectedDirectory = new File(System.getProperty("user.home"), "Documents/MentorDocs");
-        configFile = new File(System.getProperty("user.home"), ".dociimentor/dociiconfig.xml");
+        selectedDirectory = new File(System.getProperty("user.dir"), "IEEE/docs");
+        configFile = new File(System.getProperty("user.dir"), ".dociimentor/dociiconfig.xml");
         initComponents();
     }
 

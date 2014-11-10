@@ -33,7 +33,7 @@ public class Initializer {
     }
 
     private void checkConfigurationSettings() {
-        File file = new File(System.getProperty("user.home"));
+        File file = new File(System.getProperty("user.dir"));
         assert file.exists();
         file = new File(file, ".dociimentor");
         boolean configDirExists = file.exists();
@@ -61,7 +61,7 @@ public class Initializer {
             }
         }
         try {
-            File logFile = new File(System.getProperty("user.home"), ".dociimentor/logfile.txt");
+            File logFile = new File(System.getProperty("user.dir"), ".dociimentor/logfile.txt");
             Handler logFileHandler = new StreamHandler(
                     new FileOutputStream(logFile), new SimpleFormatter());
             LOGGER.addHandler(logFileHandler);

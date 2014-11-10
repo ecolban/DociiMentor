@@ -26,7 +26,8 @@ public class PageHandler {
 
     private static final String[] entryString = new String[]{
         "<tr .*>", // group 1: ignore);
-        "<td><div class=\"date_time\">[0-9a-zA-Z\\-]+</div></td>",
+        // <td><div class="date_time">18-Mar-2013 ET</div></td>
+        "<td><div class=\"date_time\">[0-9a-zA-Z\\- ]+</div></td>",
         "<td class=\"dcn_ordinal\">(\\d+)</td>", // year
         "<td class=\"dcn_ordinal\">(\\d+)</td>", // dcn
         "<td class=\"dcn_ordinal\">(\\d+)</td>", // revision

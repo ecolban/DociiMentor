@@ -296,6 +296,7 @@ public class DataAccessObject {
 				statements.add(stmtFindEntries[i]);
 			}
 			isConnected = dbConnection != null; // auto-commit is on.
+			dbConnection.setAutoCommit(false);
 		} catch (SQLException ex) {
 			isConnected = false;
 			printSQLException(ex);
