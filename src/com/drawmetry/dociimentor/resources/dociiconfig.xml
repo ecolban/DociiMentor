@@ -27,7 +27,7 @@
 <!--        <sub dir = "20$1/" regexp = "\w\w-(\d\d)-.+" />-->
         <sub dir = "802-ec/20$2" regexp = "(ec)-(\d\d)-.+" />
         <sub dir = "802wg$1/20$2" regexp = "(\d\d)-(\d\d)-.+" />
-		<sub dir = "802wg23/20$2" regexp = "(sg-emergency-services)-(\d\d)-.+" />
+        <sub dir = "802wg23/20$2" regexp = "(sg-emergency-services)-(\d\d)-.+" />
         <sub dir = "802wg24/20$2" regexp = "(sg)-(\d\d)-.+" />
     </localfiles>
 
@@ -45,7 +45,7 @@ working groups.)
         <docgroup code = "00EC" name = "EC docs" />
         <docgroup code = "INTL" name = "International activities" />
         <docgroup code = "00SA" name = "SA Reports" />
-        <docgroup code = "WCSG" name = "Wireless Chairs Subgroup" />		
+        <docgroup code = "WCSG" name = "Wireless Chairs Subgroup" />        
         <years min = "2009" max = "2020" pages = "10"/>
     </workinggroup>
 
@@ -65,21 +65,21 @@ working groups.)
     An "All Groups" item will be added and appear first on the menu. Only groups 
     that appear in the list below will be synchronized when the "All Groups" 
     selection is made.
-	
-	
+    
+    
 -->
         <docgroup code = "0000" name = "802.11 WG" />
         <docgroup code = "0arc" name = "ARC SC" />
         <docgroup code = "0jtc" name = "JTC AHC" />
-		<docgroup code = "ng60" name = "NG60 SG" />
-		<docgroup code = "0pub" name = "PUB SC" />
+        <docgroup code = "ng60" name = "NG60 SG" />
+        <docgroup code = "0pub" name = "PUB SC" />
         <docgroup code = "0reg" name = "REG SC" />
         <docgroup code = "00ah" name = "TGah" />
         <docgroup code = "00ai" name = "TGai" />
-		<docgroup code = "00aj" name = "TGaj" />
-		<docgroup code = "00ak" name = "TGak" />
-		<docgroup code = "00aq" name = "TGaq" />
-		<docgroup code = "00ax" name = "TGax" />
+        <docgroup code = "00aj" name = "TGaj" />
+        <docgroup code = "00ak" name = "TGak" />
+        <docgroup code = "00aq" name = "TGaq" />
+        <docgroup code = "00ax" name = "TGax" />
         <docgroup code = "000m" name = "TGm" />
         <docgroup code = "0wng" name = "WNG SC" />
  <!-- 
@@ -225,7 +225,7 @@ upload time in descending order, the application should synch up with. -->
         <docgroup code = "0008" name = "TG8" />
         <docgroup code = "0009" name = "TG9" />
         <docgroup code = "0000" name = "WG" />
-		<!--
+        <!--
         <docgroup code = "0hip" name = "IG HIP (inactive)" />
         <docgroup code = "00pc" name = "PC (inactive)" />
         <docgroup code = "04tv" name = "SG 4TV (inactive)" />
@@ -260,7 +260,7 @@ upload time in descending order, the application should synch up with. -->
         <docgroup code = "Gcon" name = "Gcon: Group Contribution" />
         <docgroup code = "Gdoc" name = "Gdoc: Group Document" />
         <docgroup code = "WGLS" name = "WGLS: WG Liaison Statement" />
-		<!--
+        <!--
         <docgroup code = "000n" name = "000n: P802.16n (inactive)" />
         <docgroup code = "000p" name = "000p: P802.16p (inactive)" />
         <docgroup code = "00R3" name = "00R3: P802.16 Rev 3 (inactive)" />
@@ -269,7 +269,7 @@ upload time in descending order, the application should synch up with. -->
         <docgroup code = "01R0" name = "01R0: P802.16.1, Rev 0 (inactive)" />
         <docgroup code = "Shet" name = "Shet: SG - HetNet (inactive)" />
         <docgroup code = "Smet" name = "Smet: SG - Metrology (inactive)" />
-		-->
+        -->
 
         <years min = "2012" max = "2020" pages = "20" />
     </workinggroup>
@@ -282,7 +282,7 @@ upload time in descending order, the application should synch up with. -->
         host = "https://mentor.ieee.org/"
         path = "802.18/documents">
         <docgroup code = "0000" name = "0000" />
-		<!--
+        <!--
         <docgroup code = "IMTA" name = "0001 (inactive)" />
         <docgroup code = "0001" name = "0002 (inactive)" />
         <docgroup code = "0vht" name = "0vht (inactive)" />
@@ -302,12 +302,12 @@ upload time in descending order, the application should synch up with. -->
         <docgroup code = "0000" name = "0000" />
         <docgroup code = "0CUB" name = "IG CUB" />
         <docgroup code = "0001" name = "TG1" />
-		<!--
+        <!--
         <docgroup code = "000n" name = "000n (inactive)" />
         <docgroup code = "000y" name = "000y (inactive)" />
         <docgroup code = "0sg1" name = "0sg1 (inactive)" />
         <docgroup code = "tvws" name = "tvws (inactive)" />
-		-->
+        -->
         <years min = "2004" max = "2020" pages = "2" />
     </workinggroup>
 
@@ -325,12 +325,12 @@ upload time in descending order, the application should synch up with. -->
         <docgroup code = "MISU" name = "Media Independent Services and use cases" />
         <docgroup code = "MuGM" name = "Multicast Group Management" />
         <docgroup code = "srho" name = "Single Radio Handover" />
-		<!--
+        <!--
         <docgroup code = "bcst" name = "Broadcast Services (inactive)" />
         <docgroup code = "00es" name = "Emergency Services (inactive)" />
         <docgroup code = "mrpm" name = "Multi-Radio Power Mgmt (inactive)" />
         <docgroup code = "0sec" name = "Security (inactive)" />
-        -->		
+        -->        
         <years min = "2004" max = "2020" pages = "2"/>
     </workinggroup>
     
@@ -349,9 +349,9 @@ upload time in descending order, the application should synch up with. -->
         <docgroup code = "000b" name = "Enhancements for Broadband Services and Monitoring Applications" />
         <docgroup code = "rasg" name = "rasg" />
         <docgroup code = "0003" name = "Spectrum Occupancy Sensing" />
-		<!--
+        <!--
         <docgroup code = "00sg" name = "00sg (inactive)" />
-		-->
+        -->
         <years min = "2004" max = "2020" pages = "2"/>
     </workinggroup>
 
@@ -363,13 +363,13 @@ upload time in descending order, the application should synch up with. -->
         table = "WG80223"
         host = "https://mentor.ieee.org/" 
         path = "802.23/documents"> 
-		
+        
         <docgroup code = "ESWG" name = "802.23 Emergency Serv WG" />
         <docgroup code = "ESSG" name = "Emergency Serv EC Study Group" />
-		
+        
         <years min = "2009" max = "2020" pages = "2"/>
     </workinggroup>
-	
+    
 <!--
 802.24 WG
 -->
@@ -380,9 +380,9 @@ upload time in descending order, the application should synch up with. -->
         path = "802.24/documents">
         <docgroup code = "sgtg" name = "Smart Grid Task Group" />
         <docgroup code = "0000" name = "TAG documents" />
-		<!--
+        <!--
         <docgroup code = "00sg" name = "SG documents (inactive)" />
-		-->
+        -->
         <years min = "2009" max = "2020" pages = "2"/>
     </workinggroup>
 
