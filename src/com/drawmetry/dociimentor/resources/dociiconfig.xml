@@ -72,6 +72,7 @@ working groups.)
         <docgroup code = "0arc" name = "ARC SC" />
         <docgroup code = "0jtc" name = "JTC AHC" />
         <docgroup code = "ng60" name = "NG60 SG" />
+        <docgroup code = "0PAR" name = "PAR SC" />
         <docgroup code = "0pub" name = "PUB SC" />
         <docgroup code = "0reg" name = "REG SC" />
         <docgroup code = "00ah" name = "TGah" />
@@ -191,6 +192,7 @@ upload time in descending order, the application should synch up with. -->
         <docgroup code = "0thz" name = "IG THZ" />
         <docgroup code = "0mag" name = "SC MAINTENANCE" />
         <docgroup code = "wng0" name = "SC WNG" />
+        <docgroup code = "003e" name = "SG 3e" />
         <docgroup code = "007a" name = "SG 7a" />
         <docgroup code = "0sru" name = "SG SRU" />
         <docgroup code = "0010" name = "TG10" />

@@ -5,6 +5,7 @@ import com.drawmetry.dociimentor.DocumentObject;
 import com.drawmetry.dociimentor.DocEntry;
 import com.drawmetry.dociimentor.UI;
 import com.sun.rowset.WebRowSetImpl;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -25,14 +26,21 @@ import java.util.List;
 import java.util.Properties;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
+
 import javax.sql.rowset.WebRowSet;
 
 /**
  * 
- *  @author Erik Colban &copy; 2012 <br> All Rights Reserved Worldwide
+ * @author Erik Colban &copy; 2012 <br>
+ *         All Rights Reserved Worldwide
  */
 public class DataAccessObject {
 
+	public static final int TITLE_MAX_LENGTH = 150;
+	public static final int AUTHORS_MAX_LENGTH = 400;
+	public static final int URL_MAX_LENGTH = 300;
+	public static final int FILENAME_MAX_LENGTH = 200;
+	public static final int NOTES_MAX_LENGTH = 2000;
 	/* the default framework is embedded */
 	private Connection dbConnection;
 	private Properties dbProperties;
@@ -54,11 +62,16 @@ public class DataAccessObject {
 			.getString("NORMAL SHUTDOWN");
 	private static final String strCreateDocumentTable = "create table %s ("
 			+ "  ID           INTEGER NOT NULL PRIMARY KEY GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1)"
-			+ ", YEARVAR      INTEGER" + ", DCN          INTEGER"
-			+ ", REV          INTEGER" + ", GROUPVAR     CHAR(4)"
-			+ ", TITLE        VARCHAR(150)" + ", AUTHORS      VARCHAR(400)"
-			+ ", UPLOADDATE   TIMESTAMP" + ", URL          VARCHAR(300)"
-			+ ", FILENAME     VARCHAR(200)" + ", NOTES        VARCHAR(2000)"
+			+ ", YEARVAR      INTEGER"
+			+ ", DCN          INTEGER"
+			+ ", REV          INTEGER"
+			+ ", GROUPVAR     CHAR(4)"
+			+ ", TITLE        VARCHAR(" + TITLE_MAX_LENGTH + ")"
+			+ ", AUTHORS      VARCHAR(" + AUTHORS_MAX_LENGTH + ")"
+			+ ", UPLOADDATE   TIMESTAMP"
+			+ ", URL          VARCHAR(" + URL_MAX_LENGTH + ")"
+			+ ", FILENAME     VARCHAR(" + FILENAME_MAX_LENGTH + ")"
+			+ ", NOTES        VARCHAR(" + NOTES_MAX_LENGTH + ")"
 			+ ")";
 	private static final String strGetRecord = "select * from %s "
 			+ "where ID = ?";
@@ -393,6 +406,7 @@ public class DataAccessObject {
 				id = results.getInt(1);
 			}
 		} catch (SQLException sqle) {
+			UI.LOGGER.log(Level.WARNING, "Document " + record.getDcn() + " not saved.");
 			printSQLException(sqle);
 		}
 		return id;
@@ -600,7 +614,7 @@ public class DataAccessObject {
 	public static void printSQLException(SQLException e) {
 		// Unwraps the entire exception chain to unveil the real cause of the
 		// Exception.
-		UI.LOGGER.log(Level.SEVERE, e.getMessage());
+		UI.LOGGER.log(Level.SEVERE, e.getMessage() + "\n");
 		while (e != null) {
 			System.err.println("\n----- SQLException -----");
 			System.err.println("  SQL State:  " + e.getSQLState());
