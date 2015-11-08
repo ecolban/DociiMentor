@@ -39,7 +39,7 @@ public class ConfigurationDialog extends javax.swing.JDialog {
     public ConfigurationDialog(Frame parent, boolean modal) {
         super(parent, modal);
         this.parent = parent;
-        selectedDirectory = new File(System.getProperty("user.dir"), "IEEE/docs");
+        selectedDirectory = new File(System.getProperty("user.dir"), "docs");
         configFile = new File(System.getProperty("user.dir"), ".dociimentor/dociiconfig.xml");
         initComponents();
     }

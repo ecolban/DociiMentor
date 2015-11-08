@@ -23,7 +23,7 @@
     more general regexps.  The syntax follows Java syntax for regular
     expressions (which conforms largely with POSIX regexp). 
 -->
-    <localfiles root = "IEEE/docs">
+    <localfiles root = "./docs">
 <!--        <sub dir = "20$1/" regexp = "\w\w-(\d\d)-.+" />-->
         <sub dir = "802-ec/20$2" regexp = "(ec)-(\d\d)-.+" />
         <sub dir = "802wg$1/20$2" regexp = "(\d\d)-(\d\d)-.+" />
